@@ -23,7 +23,22 @@ return {
           "<leader>g",
           group = "Git",
           icon = geticon("filetype", "git")
-        }
+        },
+        {
+          "<leader>s",
+          group = "Show Something",
+          icon = { icon = "󰚗", color = "blue" },
+        },
+        {
+          "<leader>f",
+          group = "Filer",
+          icon = geticon("default", "file"),
+        },
+        {
+          "<leader>p",
+          group = "Picker",
+          icon = { icon = "", color = "azure" },
+        },
       })
     end,
     dependencies = {

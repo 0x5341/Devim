@@ -5,12 +5,17 @@ M.config_default = {
     option = {},
     global = {},
     keymap = {},
-  }
+  },
+  terminal = {
+    shell = "bash"
+  },
 }
 
 function M.setup(config)
-  local merged = vim.tbl_deep_extend("keep", M.config_default, config)
+  local merged = vim.tbl_deep_extend("force", M.config_default, config)
   require("devim.config").setup(merged)
+
+  vim.g.__devim_config = merged
 end
 
 return M

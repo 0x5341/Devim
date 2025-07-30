@@ -1,14 +1,5 @@
 return {
   {
-    "echasnovski/mini.nvim",
-    version = false,
-    lazy = false,
-    config = function()
-      require("mini.animate").setup({})
-      require('mini.cursorword').setup()
-    end
-  },
-  {
     "echasnovski/mini.icons",
     event = "VeryLazy",
     version = false,
@@ -31,7 +22,7 @@ return {
   },
   {
     "echasnovski/mini.pairs",
-    event = { "InsertEnter", "CmdlineEnter" },
+    event = { "InsertEnter" },
     version = false,
     opts = {}
   },
@@ -109,11 +100,13 @@ return {
   },
   {
     "echasnovski/mini.animate",
+    event = "VeryLazy",
     version = false,
     opts = {},
   },
   {
     "echasnovski/mini.cursorword",
+    event = "VeryLazy",
     version = false,
     opts = {},
   },
