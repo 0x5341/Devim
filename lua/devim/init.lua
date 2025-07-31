@@ -9,6 +9,9 @@ M.config_default = {
   terminal = {
     shell = "bash"
   },
+  treesitter = {
+    install = {}
+  },
 }
 
 function M.setup(config)
