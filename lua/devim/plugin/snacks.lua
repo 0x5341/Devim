@@ -5,8 +5,6 @@ return {
     keys = {
       -- Git
       { "<leader>gg", function() Snacks.lazygit() end,                   desc = "Open Lazygit" },
-      -- Notifier
-      { "<leader>sn", function() Snacks.notifier.show_history() end,     desc = "Show Notify History" },
       -- Explorer
       { "<leader>ft", function() Snacks.explorer() end,                  desc = "Open Snacks.explorer (FileTree Viewer)" },
 
@@ -58,10 +56,8 @@ return {
       lazygit = {},
       scope = {},
       indent = {},
-      notifier = {},
       picker = {},
       quickfile = {},
-      -- scroll = {},
       statuscolumn = {},
       words = {},
     },
