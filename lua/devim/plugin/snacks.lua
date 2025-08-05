@@ -65,6 +65,7 @@ return {
     config = function(_, opts)
       require("snacks").setup(opts)
       _G.dd = require("snacks").debug.inspect
-    end
+    end,
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
   }
 }

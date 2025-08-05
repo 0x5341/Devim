@@ -1,11 +1,5 @@
 return {
   {
-    "echasnovski/mini.icons",
-    event = "VeryLazy",
-    version = false,
-    opts = {}
-  },
-  {
     "echasnovski/mini.move",
     keys = {
       { "<M-h>", mode = "x" },
