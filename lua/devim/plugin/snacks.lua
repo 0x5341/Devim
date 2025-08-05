@@ -52,6 +52,7 @@ return {
           { section = "startup" }
         }
       },
+      explorer = {},
       input = {},
       lazygit = {},
       scope = {},
