@@ -3,12 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
     config = function()
-      -- for prevent from error
-      vim.api.nvim_create_autocmd("User", {
-        pattern = "DevimLspconfigLoadAfter",
-        callback = function() end
-      })
-      vim.api.vim_exec_autocmds("User", { pattern = "DevimLspconfigLoadAfter" })
+      vim.api.nvim_exec_autocmds("User", { pattern = "DevimLspconfigLoadAfter" })
     end,
   },
   {
