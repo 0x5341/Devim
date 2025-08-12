@@ -25,6 +25,9 @@ return {
       },
       snippets = { preset = 'luasnip' },
       signature = { enabled = true },
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
+      },
       -- completion = { list = { selection = { preselect = false } } },
     },
   },
