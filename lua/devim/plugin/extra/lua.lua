@@ -1,9 +1,4 @@
-vim.api.nvim_create_autocmd("User", {
-  pattern = "DevimLspconfigLoadAfter",
-  callback = function()
-    vim.lsp.enable("lua_ls")
-  end
-})
+require("devim.util").setupLsp("lua_ls")
 
 return {
   {
@@ -14,7 +9,7 @@ return {
   {
     "saghen/blink.cmp",
     optional = true,
-    opts = function (_, opts)
+    opts = function(_, opts)
       opts.sources = opts.sources or {}
       opts.sources.default = opts.sources.default or {}
       opts.sources.providers = opts.sources.providers or {}

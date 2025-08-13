@@ -1,9 +1,4 @@
-vim.api.nvim_create_autocmd("User", {
-  pattern = "DevimLspconfigLoadAfter",
-  callback = function()
-    vim.lsp.enable("rust-analyzer")
-  end
-})
+require("devim.util").setupLsp("rust-analyzer")
 
 return {
   {
