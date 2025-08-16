@@ -1,4 +1,4 @@
-require("devim.util").setupLsp("rust-analyzer")
+require("devim.util").setupLsp("rust_analyzer")
 
 return {
   {
