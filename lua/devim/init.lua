@@ -12,6 +12,11 @@ M.config_default = {
   treesitter = {
     install = { "lua", "markdown", "markdown_inline" }
   },
+  extra = {
+    nix = {
+      nixd = {}
+    }
+  },
 }
 
 function M.merger(_, prev, value)
